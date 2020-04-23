@@ -48,7 +48,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 1.1px;
-  border: 1px solid #ced4da;
+  border: 1px solid #696f75;
   border-radius: 0.25rem;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -108,10 +108,6 @@ ul li {
   color: #000;
 }
 
-ul li:hover {
-  background-color: #fddee9;
-}
-
 ul li::before {
   counter-increment: my-sec-counter 1;
   content: " " counter(my-sec-counter) "  ➾ ";
@@ -119,10 +115,6 @@ ul li::before {
 
 ul li:nth-child(even) {
   background-color: #eee;
-}
-
-ul li:nth-child(even):hover {
-  background-color: #fddee9;
 }
 
 .checked {

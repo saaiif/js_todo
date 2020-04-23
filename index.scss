@@ -49,7 +49,7 @@ body {
 	font-weight: 400;
 	font-size: 18px;
 	letter-spacing: 1.1px;
-	border: 1px solid #ced4da;
+	border: 1px solid #696f75;
 	border-radius: 0.25rem;
 	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -91,7 +91,7 @@ ul li {
 	// margin-top: 2px;
 
 	&:hover {
-		background-color: rgb(253, 222, 233);
+		// background-color: rgb(253, 222, 233);
 	}
 }
 
@@ -104,7 +104,7 @@ ul li:nth-child(even) {
 }
 
 ul li:nth-child(even):hover {
-	background-color: rgb(253, 222, 233);
+	// background-color: rgb(253, 222, 233);
 }
 .checked {
 	color: green;
@@ -121,17 +121,16 @@ ul li:nth-child(even):hover {
 		left: 15px;
 	}
 	&:hover {
-    text-decoration: none;
-    
+		text-decoration: none;
 	}
 	&::after {
 		content: "(remove)";
 		color: tomato;
-    float: right;
+		float: right;
 		// margin: 5px 15px;
 		padding: 0 10px;
-  }
-  &::after:hover{
-    background-color: rgb(201, 169, 169);
-  }
+	}
+	&::after:hover {
+		background-color: rgb(201, 169, 169);
+	}
 }

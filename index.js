@@ -54,8 +54,7 @@ function getValue() {
 	if (!stored) {
 		list.innerHTML =
 			'<li>Welcome to my list</li>' +
-			'<li>Delete this default list and add yours OR</li>' +
-			'<li>you may continue😍 further</li>';
+			'<li>Delete this default list and add yours or you may continue😍 further</li>';
 	} else {
 		list.innerHTML = stored;
 	}
