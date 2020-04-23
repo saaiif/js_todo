@@ -97,8 +97,8 @@ ul {
 ul li {
   list-style: none;
   background-color: #fff;
-  padding: 12px 8px 12px 40px;
-  font-size: 18px;
+  padding: 15px 8px 15px 40px;
+  font-size: 17px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   position: relative;
@@ -142,8 +142,12 @@ ul li:nth-child(even) {
 .checked::after {
   content: "(remove)";
   color: tomato;
-  float: right;
-  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .checked::after:hover {
