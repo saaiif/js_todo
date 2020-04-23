@@ -131,7 +131,7 @@ ul li:nth-child(even) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   border-width: 0 2px 2px 0;
-  top: 12px;
+  top: 16px;
   left: 15px;
 }
 
