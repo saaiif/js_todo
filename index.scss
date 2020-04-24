@@ -13,22 +13,23 @@ body {
 }
 
 .mainContainer {
-	background-color: #fff;
-	width: 90vw;
+	background: linear-gradient(to right, rgba(223, 58, 252, 1) 0%, rgba(255, 139, 160, 1) 67%);
+	width: 100vw;
 	max-width: 100%;
 	// margin: 0 auto;
-	margin: 40px auto;
-	min-height: calc(100vh - 40px);
-	border-radius: 0.5rem !important;
+	// margin: 40px auto;
+	height: 100vh;
+	// min-height: calc(100vh - 40px);
+	border-radius: 0.01rem !important;
 }
 
 .container {
 	text-align: center;
-	background-color: #f7f7f7;
+	background: linear-gradient(to right, rgba(220, 57, 255, 1) 56%, rgba(90, 78, 156, 1) 100%)rgb(220, 57, 255);
 	margin: 0;
 	// max-width: 350px;
-	border-top-left-radius: 0.5rem !important;
-	border-top-right-radius: 0.5rem !important;
+	border-top-left-radius: 0.01rem !important;
+	border-top-right-radius: 0.01rem !important;
 
 	border-bottom: 1px solid red;
 }
@@ -36,6 +37,7 @@ body {
 .container h2 {
 	padding: 15px;
 	letter-spacing: 1px;
+	color: #fff;
 }
 
 .container input {
@@ -70,7 +72,7 @@ body {
 	border: 0;
 	cursor: pointer;
 	font-size: 18px;
-	background-color: #ff9966;
+	background-color: #71dfec;
 }
 
 ul {
@@ -79,15 +81,16 @@ ul {
 }
 ul li {
 	list-style: none;
-	background-color: #fff;
-	padding: 15px 8px 15px 40px;
+	background-color: #ffffff;
+	padding: 12px 8px 12px 35px;
 	font-size: 17px;
 	transition: 0.2s;
 	position: relative;
 	cursor: pointer;
 	text-transform: capitalize;
-	border-bottom: 2px solid #a73903;
+	border-bottom: 2px solid rgba(220, 57, 255, 1);
 	color: #000;
+	letter-spacing: 1px;
 	// margin-top: 2px;
 
 	&:hover {
@@ -99,17 +102,11 @@ ul li::before {
 	counter-increment: my-sec-counter 1;
 	content: " " counter(my-sec-counter) "  ➾ ";
 }
-ul li:nth-child(even) {
-	background-color: #eee;
-}
 
-ul li:nth-child(even):hover {
-	// background-color: rgb(253, 222, 233);
-}
 .checked {
 	color: green;
-	background-color: rgb(219, 235, 193);
-	// margin: auto;
+	background-color: rgb(241, 241, 239);
+	border-bottom-color: rgba(255, 139, 160, 1);
 	&::before {
 		content: "";
 		position: absolute;
@@ -118,22 +115,14 @@ ul li:nth-child(even):hover {
 		border: 0 solid green;
 		transform: rotate(45deg);
 		border-width: 0 2px 2px 0;
-		top: 16px;
-		left: 15px;
-	}
-	&:hover {
-		text-decoration: none;
+		top: 12px;
+		left: 12px;
+		text-decoration: line-through !important;
 	}
 	&::after {
 		content: "(remove)";
 		color: tomato;
-		// float: right;
-		// margin: 5px 15px;
-		display: flex;
-		align-items: center;
-		// margin-bottom: 15px !important;
-	}
-	&::after:hover {
-		background-color: rgb(201, 169, 169);
+		padding: 0 10px;
+		text-decoration: none !important;
 	}
 }

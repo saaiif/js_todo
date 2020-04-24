@@ -52,9 +52,7 @@ function store() {
 function getValue() {
 	var stored = window.localStorage.myList;
 	if (!stored) {
-		list.innerHTML =
-			'<li>Welcome to my list</li>' +
-			'<li>Delete this default list and add yours or you may continue😍 further</li>';
+		list.innerHTML = '<li>Welcome to my list</li>' + '<li>Tap/click me to delete🤦</li>';
 	} else {
 		list.innerHTML = stored;
 	}

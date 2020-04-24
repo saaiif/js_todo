@@ -15,26 +15,28 @@ body {
 }
 
 .mainContainer {
-  background-color: #fff;
-  width: 90vw;
+  background: -webkit-gradient(linear, left top, right top, from(#df3afc), color-stop(67%, #ff8ba0));
+  background: linear-gradient(to right, #df3afc 0%, #ff8ba0 67%);
+  width: 100vw;
   max-width: 100%;
-  margin: 40px auto;
-  min-height: calc(100vh - 40px);
-  border-radius: 0.5rem !important;
+  height: 100vh;
+  border-radius: 0.01rem !important;
 }
 
 .container {
   text-align: center;
-  background-color: #f7f7f7;
+  background: -webkit-gradient(linear, left top, right top, color-stop(56%, #dc39ff), to(#5a4e9c)) #dc39ff;
+  background: linear-gradient(to right, #dc39ff 56%, #5a4e9c 100%) #dc39ff;
   margin: 0;
-  border-top-left-radius: 0.5rem !important;
-  border-top-right-radius: 0.5rem !important;
+  border-top-left-radius: 0.01rem !important;
+  border-top-right-radius: 0.01rem !important;
   border-bottom: 1px solid red;
 }
 
 .container h2 {
   padding: 15px;
   letter-spacing: 1px;
+  color: #fff;
 }
 
 .container input {
@@ -86,7 +88,7 @@ body {
   border: 0;
   cursor: pointer;
   font-size: 18px;
-  background-color: #ff9966;
+  background-color: #71dfec;
 }
 
 ul {
@@ -96,16 +98,17 @@ ul {
 
 ul li {
   list-style: none;
-  background-color: #fff;
-  padding: 15px 8px 15px 40px;
+  background-color: #ffffff;
+  padding: 12px 8px 12px 35px;
   font-size: 17px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   position: relative;
   cursor: pointer;
   text-transform: capitalize;
-  border-bottom: 2px solid #a73903;
+  border-bottom: 2px solid #dc39ff;
   color: #000;
+  letter-spacing: 1px;
 }
 
 ul li::before {
@@ -113,13 +116,10 @@ ul li::before {
   content: " " counter(my-sec-counter) "  ➾ ";
 }
 
-ul li:nth-child(even) {
-  background-color: #eee;
-}
-
 .checked {
   color: green;
-  background-color: #dbebc1;
+  background-color: #f1f1ef;
+  border-bottom-color: #ff8ba0;
 }
 
 .checked::before {
@@ -131,26 +131,15 @@ ul li:nth-child(even) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   border-width: 0 2px 2px 0;
-  top: 16px;
-  left: 15px;
-}
-
-.checked:hover {
-  text-decoration: none;
+  top: 12px;
+  left: 12px;
+  text-decoration: line-through !important;
 }
 
 .checked::after {
   content: "(remove)";
   color: tomato;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.checked::after:hover {
-  background-color: #c9a9a9;
+  padding: 0 10px;
+  text-decoration: none !important;
 }
 /*# sourceMappingURL=index.css.map */
