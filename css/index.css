@@ -2,8 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
 body {
   font-family: 'Raleway', sans-serif;
-  background: -webkit-gradient(linear, left top, right top, from(tomato));
-  background: linear-gradient(to right, tomato);
   counter-reset: my-sec-counter;
 }
 
@@ -19,7 +17,7 @@ body {
   background: linear-gradient(to right, #df3afc 0%, #ff8ba0 67%);
   width: 100vw;
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   border-radius: 0.01rem !important;
 }
 
@@ -41,12 +39,12 @@ body {
 
 .container input {
   width: 100vw;
-  max-width: 60%;
+  max-width: 65%;
   border-radius: 0.5rem;
   padding: 11px 10px;
   border: 0;
   outline: none;
-  margin: 10px;
+  margin: 10px 2px;
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 1.1px;
@@ -75,20 +73,22 @@ body {
 }
 
 .container input:focus {
-  border-color: #f15c11;
+  border-color: #fd899c;
   outline: none;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 154, 2, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(255, 154, 2, 0.25);
 }
 
 .container button {
-  padding: 12px 20px;
+  padding: 11px 19px;
   outline: none;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   border: 0;
   cursor: pointer;
   font-size: 18px;
-  background-color: #71dfec;
+  background-color: #6b3377 20%;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
 }
 
 ul {
@@ -143,7 +143,36 @@ ul li::before {
   text-decoration: none !important;
 }
 
+.page-container {
+  min-height: 100vh;
+  position: relative;
+}
+
 footer {
-  background: #dc39ff;
+  background: #6b3377 56%;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer p {
+  padding-right: 15px;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+#content-wrap {
+  padding-bottom: 2.7rem;
 }
 /*# sourceMappingURL=index.css.map */

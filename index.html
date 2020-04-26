@@ -5,22 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo List App</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
 
-  <div class="mainContainer">
-    <div id="listInput" class="container">
-      <h2>Make Your List 📝</h2>
-      <input type="text" id="myInput" placeholder="Items...">
-      <button id="btn" onclick="onBtnClick()">Add</button>
-    </div>
+  <div class="mainContainer page-container">
+    <div id="content-wrap">
+      <div id="listInput" class="container">
+        <h2>Make Your List 📝</h2>
+        <input type="text" id="myInput" placeholder="Items...">
+        <button id="btn" onclick="onBtnClick()">Add</button>
+      </div>
 
-    <ul id="myUL">
-    </ul>
+      <ul id="myUL">
+      </ul>
+
+    </div>
+    <footer>
+      <p>&copy; Saif Mujawar</p>
+    </footer>
+
   </div>
-  <script src="index.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
